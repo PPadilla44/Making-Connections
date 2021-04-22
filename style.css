@@ -57,20 +57,18 @@ body {
     position: relative;
 }
 .main{
-    background-color: white;
     display: flex;
     width: 960px;
     height: 700px;
     padding: 20px;
     margin: 0px auto;
 }
-.usercard {
+.usercard, .education {
     border: 3px solid rgb(224, 224, 224);
-    width: 400px;
+    width: 450px;
     height: 300px;
     background-color: whitesmoke;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin: 0px 50px;
 }
 .blue {
     background-color: #17A2B8;
@@ -122,12 +120,12 @@ p{
     left: 40px;
     margin: 0;
 }
-h3, a {
+.usercard h3,.usercard a {
     margin-left: 5px;
 }
 
 .people {
-    width: 280px;
+    width: 300px;
 }
 .people h3 {
     margin: 0px;
@@ -143,6 +141,8 @@ h3, a {
 }
 .request{
     border: 3px solid rgb(224, 224, 224);
+    background-color: whitesmoke;
+    margin-bottom: 20px;
 }
 .number{
     background-color: rgb(224, 224, 224);
@@ -159,16 +159,16 @@ h3, a {
 }
 .connections{
     border: 3px solid rgb(224, 224, 224);
+    background-color: whitesmoke;
 }
 .view-more{
     border: 3px solid rgb(224, 224, 224);
+    background-color: whitesmoke;
+    padding: 10px;
 
 }
 a {
-    color: #17A2B8;
-}
-.view-more a {
-    margin: 20px;
+    color: #2B78E4;
     font-weight: bold;
 }
 .checks {
@@ -199,4 +199,32 @@ a {
 }
 .names h3{
     margin-left: 25px;
+}
+
+.education {
+    margin-top: 50px;
+    height: 150px;
+}
+.education .title{
+    height: 45px;
+    justify-content: flex-start;
+    
+}
+.education .title h3{
+    margin-left: 40px;
+}
+.dojo {
+    margin-left: 40px;
+    position: relative;
+    bottom: 10px;
+}
+.dojo h4 {
+    color: rgb(122, 122, 122);
+    font-style: italic;
+    margin: 0;
+    margin-top: 5px;
+}
+.dojo h3 {
+    margin: 0;
+    margin-top: 20px;
 }
