@@ -1,0 +1,202 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    padding: 0px;
+    margin: 0;
+}
+.nav{
+    background-color:#333333;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    /* width: 1000px; */
+    width: 100%;
+}
+
+.nav-title{
+    margin: 10px 0px 10px 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    right: 25px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: large;
+    margin: 0px;
+    position: relative;
+    right: 60px;
+}
+
+.nav a {
+    justify-content: space-evenly;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+}
+
+#active {
+    color: white;
+}
+
+.btn {
+    height: 30px;
+    width: 90px;
+    border: 3px solid black;
+    box-shadow: 4px 4px black;
+    background-color: #50B8C9;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-size: medium;
+    position: relative;
+}
+.main{
+    background-color: white;
+    display: flex;
+    width: 960px;
+    height: 700px;
+    padding: 20px;
+    margin: 0px auto;
+}
+.usercard {
+    border: 3px solid rgb(224, 224, 224);
+    width: 400px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.blue {
+    background-color: #17A2B8;
+    height: 30%;
+}
+.circle {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+.user {
+    height: 90%;
+}
+.map, .gear {
+    height: 20px;
+}
+p{
+    position: relative;
+    margin: 0;
+    bottom: 60px;
+    left: 40px;
+}
+.location{
+    width: 210px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:40px;
+    bottom: 60px;
+}
+.edit{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+}
+.usercard h1{
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+    margin: 0;
+}
+h3, a {
+    margin-left: 5px;
+}
+
+.people {
+    width: 280px;
+}
+.people h3 {
+    margin: 0px;
+}
+.title{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.request{
+    border: 3px solid rgb(224, 224, 224);
+}
+.number{
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#wide {
+    width: 60px;
+}
+.connections{
+    border: 3px solid rgb(224, 224, 224);
+}
+.view-more{
+    border: 3px solid rgb(224, 224, 224);
+
+}
+a {
+    color: #17A2B8;
+}
+.view-more a {
+    margin: 20px;
+    font-weight: bold;
+}
+.checks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    position: relative;
+    right: 10px;
+}
+.photo {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #333333;
+}
+.accept, .decline{
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 30px;
+}
+.names{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    left: 10px;
+}
+.names h3{
+    margin-left: 25px;
+}
