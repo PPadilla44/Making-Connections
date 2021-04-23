@@ -88,7 +88,6 @@
 }
 p{
     position: relative;
-    margin: 0;
     bottom: 60px;
     left: 40px;
 }
@@ -112,7 +111,6 @@ h1, h3, p{
     left: 25px;
     top: 55px;
     width: fit-content;
-    height: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -153,12 +151,14 @@ h1, h3, p{
 .connections{
     border: 3px solid rgb(224, 224, 224);
     background-color: whitesmoke;
+    
 }
 .view-more{
     border: 3px solid rgb(224, 224, 224);
     background-color: whitesmoke;
+    display: flex;
+    border-top: none;
     padding: 10px;
-
 }
 a {
     color: #2B78E4;
@@ -201,7 +201,6 @@ a {
 .education .title{
     height: 45px;
     justify-content: flex-start;
-    
 }
 .education .title h3{
     margin-left: 40px;
@@ -214,10 +213,8 @@ a {
 .dojo h4 {
     color: rgb(122, 122, 122);
     font-style: italic;
-    margin: 0;
     margin-top: 5px;
 }
 .dojo h3 {
-    margin: 0;
     margin-top: 20px;
 }
