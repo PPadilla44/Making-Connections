@@ -24,16 +24,20 @@
                 <img class="user" src="icons/user-circle.png" alt="user">
                 <div class="bottom-card">
                     <div class="info-card">
-                        <h1>Pablo Padilla</h1>
+                        <div class="name-editor">
+                            <h1 id="name">Pablo Padilla</h1>
+                            <input type="text" name="full_name" id="new-name" placeholder="Your name...">
+                        <button id="accept-button" onclick="changeName()">ACCEPT</button>
+                        </div>
                         <div class="location">
                             <img class="map" src="icons/map-marker.png" alt="map">
                             <h3>South San Francisco</h3>
                         </div>
                         <h3>Developer | Engineer | Problem Solver</h3>
                         <h3>Master of all elements!</h3>
-                        <div class="edit">
+                        <div class="edit" onclick="editProfile()">
                             <img class="gear" src="icons/gear.png" alt="gear">
-                            <a href="#">edit profile</a>
+                            <h3>edit profile</h3>
                         </div>
                     </div>
                 </div>
@@ -52,27 +56,27 @@
         <div class="people">    
             <div class="request">
                 <div class="title">
-                    <h3 class="number">2</h3>
+                    <h3 class="number" id="request-number">2</h3>
                     <h3>Connection Requests</h3>
                 </div>
                     <div>
-                        <div class="checks">
+                        <div class="checks"  id="todd">
                             <img src="/img/todd-s.jpg" alt="Todd" class="photo">
                             <h3>Todd E</h3>
-                            <img class="accept" src="/icons/accept-circle.png" alt="accept">
-                            <img class="accept" src="/icons/close-circle.png" alt="close">
+                            <img class="accept" src="/icons/accept-circle.png" alt="accept" onclick="accept('todd')">
+                            <img class="decline" src="/icons/close-circle.png" alt="close" onclick="decline('todd')">
                         </div>  
-                        <div class="checks">      
+                        <div class="checks"  id="phil">      
                             <img src="/img/phil-s.jpg" alt="Phil" class="photo">
                             <h3>Phil K</h3>
-                            <img class="accept" src="/icons/accept-circle.png" alt="accept">
-                            <img class="accept" src="/icons/close-circle.png" alt="close">
+                            <img class="accept" src="/icons/accept-circle.png" alt="accept" onclick="accept('phil')">
+                            <img class="decline" src="/icons/close-circle.png" alt="close" onclick="decline('phil')">
                         </div>   
                 </div>
             </div>
             <div class="connections">
                 <div class="title">
-                        <h3 class="number" id="wide">500+</h3>
+                        <h3 class="number" id="wide">418</h3>
                     <h3>Your Connections</h3>
                 </div>
                 <div class="names">
@@ -92,8 +96,9 @@
                     <h3>Arry Y</h3>
                 </div>    
             </div>
-            <a href="#" class="view-more">View More</a>
+            <h3 class="view-more">View More</h3>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
