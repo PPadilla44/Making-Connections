@@ -1,16 +1,11 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-body {
-    padding: 0px;
-    margin: 0;
-}
 .nav{
     background-color:#333333;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    /* width: 1000px; */
     width: 100%;
 }
 
@@ -55,6 +50,7 @@ body {
     font-weight: bold;
     font-size: medium;
     position: relative;
+    cursor: pointer;
 }
 .main{
     display: flex;
@@ -63,7 +59,7 @@ body {
     padding: 20px;
     margin: 0px auto;
 }
-.usercard, .education {
+.usercard, .education { 
     border: 3px solid rgb(224, 224, 224);
     width: 450px;
     height: 300px;
@@ -74,54 +70,76 @@ body {
     background-color: #17A2B8;
     height: 30%;
 }
-.circle {
-    background-color: rgb(224, 224, 224);
+.user {
     border-radius: 50%;
+    border: 5px solid rgb(224, 224, 224);
     height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     bottom: 50px;
-    left: 30px;
+    left: 20px;
 }
-.user {
-    height: 90%;
+.name-editor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#accept-button, #new-name {
+    margin-left: 5px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 10px black;
+    visibility: hidden;
+    cursor: pointer;
+
+}
+
+#new-name {
+    width: 100px;
+}
+
+.bottom-card{
+    height: 70%;
+    position: relative;
+    bottom: 115px;
 }
 .map, .gear {
     height: 20px;
+    margin-right: 10px;
 }
 p{
     position: relative;
-    margin: 0;
     bottom: 60px;
     left: 40px;
+}
+.location, .edit{
+    display: flex;
+    width: fit-content;
+    margin: 5px 0px
 }
 .location{
-    width: 210px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    left:40px;
-    bottom: 60px;
+    font-size: larger;
 }
 .edit{
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 50px;
-    left: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+
 }
-.usercard h1{
-    width: 200px;
-    position: relative;
-    bottom: 50px;
-    left: 40px;
+.edit h3, .view-more {
+    color: #2B78E4;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1, h3, p{
     margin: 0;
 }
-.usercard h3,.usercard a {
-    margin-left: 5px;
+.info-card {
+    position: relative;
+    left: 25px;
+    top: 55px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .people {
@@ -129,9 +147,7 @@ p{
     display: flex-s;
     flex-direction: column;
 }
-.people h3 {
-    margin: 0px;
-}
+
 .title{
     background-color: rgb(59, 59, 59);
     display: flex;
@@ -139,7 +155,6 @@ p{
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    color: white;
 }
 .request{
     border: 3px solid rgb(224, 224, 224);
@@ -156,18 +171,23 @@ p{
     align-items: center;
     color: black;
 }
+.title {
+    color: white;
+}
 #wide {
     width: 60px;
 }
 .connections{
     border: 3px solid rgb(224, 224, 224);
     background-color: whitesmoke;
+    
 }
 .view-more{
     border: 3px solid rgb(224, 224, 224);
     background-color: whitesmoke;
+    display: flex;
+    border-top: none;
     padding: 10px;
-
 }
 a {
     color: #2B78E4;
@@ -191,6 +211,8 @@ a {
     border-radius: 50%;
     position: relative;
     left: 30px;
+    cursor: pointer;
+
 }
 .names{
     display: flex;
@@ -210,7 +232,6 @@ a {
 .education .title{
     height: 45px;
     justify-content: flex-start;
-    
 }
 .education .title h3{
     margin-left: 40px;
@@ -223,10 +244,8 @@ a {
 .dojo h4 {
     color: rgb(122, 122, 122);
     font-style: italic;
-    margin: 0;
     margin-top: 5px;
 }
 .dojo h3 {
-    margin: 0;
     margin-top: 20px;
 }
