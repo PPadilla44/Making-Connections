@@ -126,6 +126,8 @@ p{
 
 .people {
     width: 300px;
+    display: flex-s;
+    flex-direction: column;
 }
 .people h3 {
     margin: 0px;
