@@ -1,5 +1,3 @@
-console.log("WOKRING")
-
 var acceptButton = document.getElementById("accept-button");
 var textBox = document.getElementById("new-name");
 
@@ -25,7 +23,6 @@ function changeName() {
 var requestNumber = parseInt(document.getElementById("request-number").innerHTML);
 var connectionNumber = parseInt(document.getElementById("wide").innerHTML)
 var connections = document.querySelector(".connections");
-console.log(connections)
 
 function accept(requestId) {
     var request = document.getElementById(requestId);
